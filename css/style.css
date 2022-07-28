@@ -3,6 +3,9 @@
     --main-branco: #FFFFFF;
     --main-preto: #000000;
     --main-amarelo: #fffb00;
+    --main-azul: #002fff;
+    --main-rosa: #ff3db5;
+    --main-vermelho: #ff0000;
     --main-amarelo--escuro: #979500;
 }
 
@@ -65,7 +68,7 @@ main {
     background: rgba(0,0,0,0.8);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-amarelo);
-    height: 80%;
+    height: 90%;
 }
 
 /****************************** Equipamentos *****/
@@ -128,6 +131,41 @@ main {
     text-align: center;
     border: 3px solid var(--main-cinza);
     cursor: pointer;
+}
+
+.controle-cor {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 0.3em;
+    line-height: 44px;
+    border-radius: 50%;
+    border: 3px solid var(--main-cinza);
+    cursor: pointer;
+}
+
+#amarelo{
+    background: var(--main-amarelo);
+}
+
+#rosa{
+    background: var(--main-rosa);
+}
+
+#preto{
+    background: var(--main-preto);
+}
+
+#branco{
+    background: var(--main-branco);
+}
+
+#azul{
+    background: var(--main-azul);
+}
+
+#vermelho{
+    background: var(--main-vermelho);
 }
 
 .linha {

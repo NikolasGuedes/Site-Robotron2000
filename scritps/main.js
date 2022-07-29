@@ -47,8 +47,8 @@ controle.forEach((elemento) => {
 })
 
 
-corRobo.forEach((elemento) =>{
-    elemento.addEventListener("click", (e) =>{
+corRobo.forEach((elemento) => {
+    elemento.addEventListener("click", (e) => {
         trocaCor(e.target.dataset.cor);
     })
 })
@@ -64,42 +64,19 @@ function manipulaDados(operacao, controle) {
     }
 }
 
-function atualizaEstatisticas(peca){
+function atualizaEstatisticas(peca) {
     //console.log(pecas[peca]);
 
-    estatistica.forEach( (elemento) => {
-       //console.log(elemento.dataset.estatistica)
+    estatistica.forEach((elemento) => {
+        //console.log(elemento.dataset.estatistica)
         //console.log(elemento.textContent)
-        elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]; 
+        elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica];
     })
 }
 
-function trocaCor(cor){
+function trocaCor(cor) {
 
-    if(cor === "amarelo"){
-        console.log("Mudou para Amarelo");
-        imagemRobo.setAttribute('src', "img/Robotron-Amarelo.png") 
-    }
-    if(cor === "azul"){
-        console.log("Mudou para Azul");
-        imagemRobo.setAttribute('src', "img/Robotron-Azul.png") 
-    }
-    if(cor === "preto"){
-        console.log("Mudou para Preto");
-        imagemRobo.setAttribute('src', "img/Robotron-Preto.png") 
-    }
-    if(cor === "vermelho"){
-        console.log("Mudou para Vermelho");
-        imagemRobo.setAttribute('src', "img/Robotron-Vermelho.png") 
-    }
-    if(cor === "branco"){
-        console.log("Mudou para Branco");
-        imagemRobo.setAttribute('src', "img/Robotron-Branco.png") 
-    }
-    if(cor === "rosa"){
-        console.log("Mudou para Rosa");
-        imagemRobo.setAttribute('src', "img/Robotron-Rosa.png") 
-    }
-   
+    imagemRobo.setAttribute('src', "img/Robotron-"+cor+".png")
+
 }
 
